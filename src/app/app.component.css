@@ -1,0 +1,15 @@
+.container {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  top: auto;
+}
+/* div {
+  border: 1px solid black;
+} */
+.password {
+  width: 100%;
+}
+.parameters {
+  width: 100%;
+}
