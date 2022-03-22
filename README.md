@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 
-#Install Dependencies
+## Install Dependencies
 
 Run `npm install` inside the project folder to install all dependencies.
 
