@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  /* background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72,
-    #a8eb12
-  ); */
+  background: rgb(230, 238, 174);
+  background: radial-gradient(
+    circle,
+    rgba(230, 238, 174, 1) 0%,
+    rgba(187, 213, 177, 1) 55%,
+    rgba(148, 200, 233, 1) 100%
+  );
 }

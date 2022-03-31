@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PasswordService } from './password.service';
 
 @Component({
   selector: 'app-root',
@@ -7,20 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'password-generator';
-  parameters: string = '';
-  password: string = '';
-  passwordLen: number = 15;
 
-  generatePassword(parameter: { parameters: string; length: number }) {
-    this.parameters = parameter.parameters;
-    this.password = '';
-    this.passwordLen = parameter.length;
-    for (var i = 0; i < this.passwordLen; i++) {
-      var randomNumber = Math.floor(Math.random() * this.parameters.length);
-      this.password += this.parameters.substring(
-        randomNumber,
-        randomNumber + 1
-      );
-    }
-  }
+  password: string = '';
+  constructor(private passwordService: PasswordService) {}
+  generatePassword() {}
 }

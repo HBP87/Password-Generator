@@ -1,15 +1,19 @@
 <div class="container">
   <div class="row">
+    <div class="col-md-12">
+      <h1>Password Generator</h1>
+      <p>By <em>Rashid Raza.</em></p>
+    </div>
+  </div>
+  <div class="row">
     <div class="col-md-12 password">
-      <app-show-password [pass]="this.password"></app-show-password>
+      <app-show-password></app-show-password>
     </div>
   </div>
   <hr />
   <div class="row">
     <div class="col-md-12 parameters">
-      <app-password-parameters
-        (onChange)="generatePassword($event)"
-      ></app-password-parameters>
+      <app-password-parameters></app-password-parameters>
     </div>
   </div>
 </div>

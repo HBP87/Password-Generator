@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ShowPasswordComponent } from './show-password/show-password.component';
 import { PasswordParametersComponent } from './password-parameters/password-parameters.component';
 import { FormsModule } from '@angular/forms';
+import { PasswordService } from './password.service';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { FormsModule } from '@angular/forms';
     PasswordParametersComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [PasswordService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
