@@ -7,7 +7,7 @@ import { PasswordService } from '../password.service';
   styleUrls: ['./show-password.component.css'],
 })
 export class ShowPasswordComponent implements OnInit, DoCheck {
-  password: String = '';
+  password = '';
   constructor(private passwordService: PasswordService) {}
 
   ngOnInit(): void {}
